@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="css/rwd.css" type="text/css">
+    <!--    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">-->
+
+    <title>Lycaeum</title>
+</head>
+
+<body>
+
+
+
+    <header>
+        <h1>Covid-19 Travel affidavits</h1>
+    </header>
+
+
+    <div class="login-wrap d-flex align-content-center h-100">
+        <div class="container">
+            <div class="row  h-100 justify-content-center">
+                <div class="col-lg-6 col-md-8  align-self-center">
+                    <div class=" bx-shadow p-3 mb-4">
+                        <div class="lycaeum-wolf">
+                            <form>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="" placeholder="Mobile number">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="" placeholder="Vehicle number">
+                                </div>
+
+                                <div class="form-group">
+                                    <select class="custom-select">
+                                        <option value="1">Type of vehicle</option>
+                                        <option value="2">Bike</option>
+                                        <option value="3">Car</option>
+                                        <option value="4">Suv</option>
+                                        <option value="5">Other</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="" placeholder="Name of passenger">
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="" placeholder="Date of birth (Eg:- 1990-03-14)">
+                                </div>
+
+                                <div class="form-group">
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Address"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Reason for travel"></textarea>
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="" placeholder="Date of travel (Eg:- 2020-03-26)">
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="" placeholder="Date of return (Eg:- 2020-03-26)">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="" placeholder="Place">
+                                </div>
+                                <div class="form-group">
+                                    <select class="custom-select">
+                                        <option value="1">RTO Jurisdiction</option>
+                                        <option value="2">KL-01 Thiruvananthapuram</option>
+                                        <option value="3">KL-02 Kollam</option>
+                                        <option value="4">KL-03 Pathanamthitta</option>
+                                        <option value="5">Kl-04 Alappuzha</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="" placeholder="Name of co-passenger">
+                                </div>
+                                <div class="form-group show-passenger">
+                                    <input type="text" class="form-control" id="" placeholder="Name of co-passenger">
+                                </div>
+                                <div class="form-group text-right">
+                                    <a href="" class="btn btn-sm btn-secondary remove-btn"> <i>- Remove Passenger</i> </a>
+                                    <a href="" class="btn btn-sm btn-secondary add-btn"> <i> + Add Passenger</i></a>
+                                </div>
+                                <button type="submit" class="btn btn-block btn-theme">Download PDF</button>
+                            </form>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+        <p><a href="https://thelycaeum.in/" target="_blank"><img src="img/lycaeum-icn.png" alt="lycaeum" class="img-fluid"></a></p>
+        Powered by <a href="https://thelycaeum.in/" target="_blank">LYCAEUM</a>
+        <p>© <a href="https://hamon.in/" target="_blank">Hamon Technologies LLP</a> 2020</p>
+
+    </footer>
+    <!-- Optional JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <scrpit src="js/bootstrap.min.js"></scrpit>
+    <scrpit src="js/bootstrap.min.js"></scrpit>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $(".add-btn").click(function(e) {
+                e.preventDefault();
+                $(".show-passenger").show();
+
+            });
+            $(".remove-btn").click(function(e) {
+                e.preventDefault();
+                $(".show-passenger").hide();
+            });
+        });
+    </script>
+
+</body></html>
